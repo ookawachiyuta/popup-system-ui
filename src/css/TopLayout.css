@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header-content {
+    background-color: #071952;
+    color: #EBF4F6;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7);
+    z-index: 20;
+}
+
+.header-icon {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.header-title h1 {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: "Shippori Antique B1", sans-serif;
+    /*font-family: "Dela Gothic One", sans-serif;*/
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.main-container {
+    font-family: "Noto Sans JP", sans-serif;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: solid #e0e0e0;
+    overflow-y: auto;
+}
+
+.sidebar-item {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.form-item{
+    padding: 15px;
+}
+
+.form-item-sitename{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.help-text{
+    padding-bottom: 10px;
+}
+
+.area-selection-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.area-selection-header {
+    margin-bottom: 10px;
+}
+
+.select-all-button {
+    margin-bottom: 10px;
+}
+
+.selected-areas-container {
+    margin-bottom: 15px;
+}
+
+.selected-area-tag {
+    margin-bottom: 5px;
+}
+
+.area-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area-group-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.area-group-header {
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    margin-bottom: 10px;
+}
+
+.select-group-button {
+    margin-left: 10px;
+}
+
+.area-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area-checkbox {
+    width: 33.33%;
+    margin-bottom: 5px;
+}
+
+.schedule-setting {
+    /*max-width: 600px;*/
+    margin: 0 auto;
+    padding: 15px;
+    /*background-color: #f5f5f5;*/
+    /*border-radius: 8px;*/
+}
+
+.schedule-setting__display-option {
+    margin-bottom: 20px;
+}
+
+.schedule-setting__display-option .ant-radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.schedule-setting__sets {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.schedule-set {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-set__controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.schedule-set__group-btn {
+    flex: 1;
+}
+
+.schedule-set__delete-btn {
+    color: #ff4d4f;
+}
+
+.schedule-set__weekdays {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.schedule-set__weekdays .ant-checkbox-wrapper {
+    margin-right: 0;
+}
+
+.schedule-set__time-pickers {
+    display: flex;
+    gap: 20px;
+}
+
+.schedule-set__time-picker {
+    width: 120px;
+}
+
+.schedule-setting__add-btn {
+    margin-top: 20px;
+}
+
+.finish-setting {
+    /*font-family: Arial, sans-serif;*/
+    /*color: #333;*/
+    /*max-width: 600px;*/
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.confirm-section {
+    margin-bottom: 20px;
+}
+
+.confirm-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.confirm-label input[type="checkbox"] {
+    accent-color: #088395;
+    margin-right: 10px;
+}
+
+.publish-section {
+    display: flex;
+    justify-content: center;
+}
+
+.publish-button {
+    background-color: #088395;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.publish-button:hover {
+    background-color: #066a77;
+}
+
+.publish-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

@@ -1,0 +1,42 @@
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.home-header h2 {
+    font-size: 17px;
+    margin: 0;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 右側の要素間の間隔 */
+    /*margin: 0;*/
+}
+
+.select-group {
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    margin: 0;
+    margin-right: 5px; /* 「これ」とセレクトボックスの間隔 */
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.text-select {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    /*padding-right: 20px; !* 矢印のためのスペース *!*/
+}

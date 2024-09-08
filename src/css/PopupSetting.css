@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* 全体のスクロールを無効化 */
+}
+
+.popup-setting {
+    width: 100%;
+    height: 100vh; /* ビューポートの高さいっぱいに */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; /* パディングを幅と高さに含める */
+}
+
+.popup-setting__container {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* 親要素の高さいっぱいに */
+}
+
+
+.popup-setting__header {
+    text-align: center;
+    flex-shrink: 0; /* ヘッダーのサイズを固定 */
+}
+
+.popup-setting__header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 変更: 要素を均等に配置 */
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.popup-setting__header h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    flex: 1; /* 追加: 中央に配置するためのフレックス設定 */
+    text-align: center; /* 追加: テキストを中央揃え */
+}
+
+.popup-setting__back-link {
+    flex: 0 0 auto; /* 変更: 幅を内容に合わせる */
+    text-decoration: none;
+    /* left プロパティは削除 */
+}
+
+.popup-setting__back-link p {
+    color: #999999;
+    margin: 0;
+}
+
+/* 追加: 右側の空白を作るための要素 */
+.popup-setting__header::after {
+    content: '';
+    flex: 0 0 auto;
+    width: 50px; /* back-link とほぼ同じ幅を確保 */
+}
+
+.popup-setting__main {
+    display: flex;
+    min-height: 500px;
+    overflow: hidden; /* 重要: 内部でスクロールを管理するため */
+}
+
+.popup-setting__navigation {
+    width: 200px;
+    /*background-color: #e0e0e0;*/
+    padding: 20px;
+    overflow-y: auto; /* 内容が多い場合にスクロール可能に */
+    height: 100%; /* 親要素の高さいっぱいに */
+}
+
+.popup-setting__nav-list {
+    /*background-color: #d0d0d0;*/
+    list-style-type: none;
+    padding: 0;
+    border-right: 1px solid #999
+}
+
+.popup-setting__nav-item{
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    /*background-color: #d0d0d0;*/
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup-setting__nav-item a{
+    text-decoration: none;
+    color: #071952;
+}
+
+.popup-setting__nav-item a:hover{
+    text-decoration: underline;  /* ホバー時に下線を表示 */
+    color: #066a77;
+}
+
+.popup-setting__form-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* スクロール可能に */
+    height: 100%; /* 親要素の高さいっぱいに */
+}
+
+/*.add-cards section {*/
+/*    background-color: white;*/
+/*    margin-bottom: 20px;*/
+/*    padding: 20px;*/
+/*    border-radius: 4px;*/
+/*    box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+/*}*/
